@@ -86,3 +86,9 @@ img {
   border: 1px solid transparent;
   font-weight: 500;
 }
+
+btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
