@@ -24,7 +24,7 @@
   --container-width-md: 90%;
   --container-width-sm: 94%;
 
-  --transition: all 400mx ease;
+  --transition: all 400ms ease;
 }
 
 body {
@@ -85,10 +85,52 @@ img {
   padding: 1rem, 2rem;
   border: 1px solid transparent;
   font-weight: 500;
+  transition: var(--transition);
 }
 
 btn:hover {
   background: transparent;
   color: var(--color-white);
   border-color: var(--color-white);
+}
+
+btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* ===================navbar==================== */
+
+nav {
+  background-color: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav__menu a:hover {
+  color: var(--color-bg2);
 }
