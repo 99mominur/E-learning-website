@@ -112,6 +112,14 @@ nav {
   z-index: 99;
   top: 0;
 }
+
+/* bg change on scroll using js */
+
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .nav__container {
   height: 100%;
   display: flex;
@@ -156,8 +164,111 @@ header {
   height: 100%;
 }
 
-.header__left p{
+.header__left p {
   /* margin: 1rem 0, 2.4rem; */
   margin-top: 1rem;
   margin-bottom: 2.4rem;
+}
+
+/* ===================Categories==================== */
+
+.categories {
+  background: var(--color-bg1);
+  height: 30rem;
+}
+
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.categories__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.categories__left {
+  margin-right: 4rem;
+  text-align: left;
+}
+.categories__left p {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.categories__right {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.category:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.category:nth-child(2) .category__icon {
+  background: var(--color-danger);
+}
+
+.category:nth-child(3) .category__icon {
+  background: var(--color-success);
+}
+.category:nth-child(4) .category__icon {
+  background: var(--color-warning);
+}
+.category:nth-child(5) .category__icon {
+  background: var(--color-success);
+}
+.category__icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+.category h5 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.category p {
+  font-size: 0.85rem;
+}
+
+/* ===================Popular Courses==================== */
+
+.courses {
+  margin-top: 10rem;
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.course {
+  background: var(--color-bg1);
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.course__info {
+  padding: 2rem;
+}
+.course__info p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
 }
