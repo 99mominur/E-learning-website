@@ -33,3 +33,21 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+// active page fun learning, brain poked
+
+// const url = window.location.href;
+// let hostname = new URL(url).pathname;
+// if (hostname.includes("index.html")) {
+//   const index = document.querySelector(".index__html");
+//   index.classList.add("active");
+// } else if (hostname.includes("about.html")) {
+//   const index = document.querySelector(".about__html");
+//   index.classList.add("active");
+// } else if (hostname.includes("courses.html")) {
+//   const index = document.querySelector(".courses__html");
+//   index.classList.add("active");
+// } else if (hostname.includes("contact.html")) {
+//   const index = document.querySelector(".contact__html");
+//   index.classList.add("active");
+// }
