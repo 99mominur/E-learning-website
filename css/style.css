@@ -357,6 +357,9 @@ header {
   transform: rotate(45deg);
 }
 
-.active{
-  border-bottom: 0.3rem solid lightgreen;
+.active {
+  border-bottom: 0.2rem solid lightgreen;
+}
+.active:hover{
+  border: none;
 }
