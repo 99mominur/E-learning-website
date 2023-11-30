@@ -146,6 +146,13 @@ nav button {
   color: var(--color-bg2);
 }
 
+.active {
+  border-bottom: 0.2rem solid lightgreen;
+}
+.active:hover {
+  border: none;
+}
+
 /* ===================Header==================== */
 
 header {
@@ -174,7 +181,7 @@ header {
 
 .categories {
   background: var(--color-bg1);
-  height: 30rem;
+  height: 32rem;
 }
 
 .categories h1 {
@@ -315,7 +322,7 @@ header {
 }
 /* ===================Testimonial section==================== */
 
-.testimonials__contaiter {
+.testimonials__container {
   overflow-x: hidden;
   position: relative;
   margin-bottom: 5rem;
@@ -354,12 +361,105 @@ header {
   height: 3rem;
   position: absolute;
   top: -1.5rem;
+  margin-left: -1.5rem;
   transform: rotate(45deg);
 }
 
-.active {
-  border-bottom: 0.2rem solid lightgreen;
+/* ===================Footer section==================== */
+
+footer {
+  background: var(--color-bg1);
+  padding-top: 5rem;
+  font-size: 0.9rem;
 }
-.active:hover{
-  border: none;
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer__copyrights {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}
+
+/* =================== Media Queries (Tablets) ==================== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  /* ======================== NAVBAR===================== */
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  nav button#close-menu-btn {
+    display: none;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+  }
+  .nav__menu li a {
+    background: var(--color-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav__menu li a:hover {
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
 }
