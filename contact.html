@@ -16,6 +16,11 @@
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <style>
+      body{
+        background-image: url("./images/bg-texture.png");
+      }
+    </style>
   </head>
   <body>
     <!-- ================nav section start=============== -->
@@ -40,14 +45,56 @@
 
     <!-- ================nav section end=============== -->
 
-    <!-- ===============font awesome kit =============== -->
-    <script
-      src="https://kit.fontawesome.com/04866ba018.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- ================Contact section start=============== -->
+    
+    <section class="contact">
+      <div class="container contact__container">
+        <aside class="contact__aside">
+          <div class="aside__image">
+            <img src="./images/contact.svg">
+          </div>
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit harum deserunt natus?</p>
+          <ul class="contact__details">
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <h5>+8801928802211</h5>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>                
+                <h5>99mominur@gmail.com</h5>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Dhaka, Bangladesh</h5>
+              </li>
+            </ul>
+            <ul class="contact__socials">
+              <li><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </aside>
 
-    <!--==================== JavaScript files =================-->
+          
+          <form action="https://formspree.io/f/mrgwwvlp" method="post" class="contact__form">
+          <div class="form__name">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="Email Address" placeholder="Your Email Address" required>
+          <textarea name="Message" rows=7" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary"> Send Message</button>
+        </form>
+        
+      </div>
+    </section>
 
+    <!-- ================Contact section end=============== -->
+    
+    
+    
     <!-- ================Footer section start=============== -->
     <footer>
       <div class="container footer__container">

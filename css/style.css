@@ -569,17 +569,17 @@ footer ul li a:hover {
     grid-template-columns: 1fr;
   }
   /* ===================Footer==================== */
-  .footer__container{
+  .footer__container {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
 
-  .footer__1 p{
+  .footer__1 p {
     margin: 1rem auto;
   }
 
-  .footer__socials{
+  .footer__socials {
     justify-content: center;
   }
 }
